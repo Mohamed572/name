@@ -1,0 +1,13 @@
+name = input("Please Enter your name: ")
+age = input("Please Enter your age: ")
+address = input("Please Enter your address: ")
+
+Name= name.isdigit()
+Age=age.isdigit()
+
+if (Name == False):
+    if (Age == True):
+        print("Hello Mr/Ms {} ,age {} located in address {} . \n thanks for beening in our comunity, \t Enjoy".format(name,age,address))
+else:
+    print("Wrong Input, Try again")
+    
