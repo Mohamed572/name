@@ -1,0 +1,37 @@
+t=""
+total = 0
+num1=0
+num2=0
+num1 = input("Enter the first Number: ")
+Num1 = num1.isdigit()
+
+if Num1:
+    oper = int(input("Enter a number of the operator {1=(+), 2=(-), 3=(*), 4=(/), 5=(^), 6=(%)}: "))
+    num2 = input("Enter the second Number: ")
+    Num2 = num2.isdigit()
+    if Num2:
+        if oper == 1 :
+            t="+"
+            total = int(num1) + int (num2)
+        elif oper == 2:
+            t="-"
+            total = int(num1) - int(num2)
+        elif oper == 3:
+            t="*"
+            total = int(num1) * int(num2)
+        elif oper == 4:
+            t="/"
+            total = int(num1) / int(num2)
+        elif oper == 5:
+            t="^"
+            total =  int(num1) ** int(num2)
+        elif oper == 6:
+            t="%"
+            total = int(num1) % int(num2)
+        print(num1 ,t,num2 ,"=", total)
+
+        
+    elif Num2 == False:
+        print("Wrong input for Number2")
+elif Num1 == False:
+    print("Wrong input for Number1")
